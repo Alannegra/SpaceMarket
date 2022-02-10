@@ -22,18 +22,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
 
-        setSupportActionBar(binding.toolbar);
+        /*setSupportActionBar(binding.toolbar);*/
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 // Top-level destinations:
-                R.id.bottom1Fragment, R.id.bottom2Fragment, R.id.bottom3Fragment, R.id.options1Fragment, R.id.options2Fragment, R.id.options3Fragment
-        )
-
-                .build();
+                R.id.bottom1Fragment, R.id.bottom2Fragment, R.id.bottom3Fragment, R.id.options1Fragment, R.id.options2Fragment
+        ).build();
 
         navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
 
-        NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration);
+        //NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
 
     }

@@ -31,8 +31,17 @@
         android:label="fragment_options2"
         tools:layout="@layout/fragment_options2" />
     <fragment
+        android:id="@+id/fragment_menutopnav"
+        android:name="com.example.navegation.fragment_menutopnav"
+        android:label="fragment_menutopnav"
+        tools:layout="@layout/fragment_menutopnav" >
+        <action
+            android:id="@+id/action_fragment_menutopnav_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
+    </fragment>
+    <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
         android:label="fragment_options3"
-        tools:layout="@layout/fragment_options3" />
+        tools:layout="@layout/fragment_options3" />-->
 </navigation>
