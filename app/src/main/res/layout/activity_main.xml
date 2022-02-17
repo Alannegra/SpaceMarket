@@ -10,10 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include android:id="@+id/news_title"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            layout="@layout/fragment_menutopnav"/>
+
 
         <!--<com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
@@ -33,6 +30,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/fragment_menutopnav"/>
 
             <androidx.fragment.app.FragmentContainerView
                 android:name="androidx.navigation.fragment.NavHostFragment"
