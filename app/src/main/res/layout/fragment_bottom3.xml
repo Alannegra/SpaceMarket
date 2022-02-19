@@ -7,7 +7,7 @@
     tools:context=".Bottom3Fragment"
     android:background="@drawable/galaxy">
 
-    <include android:id="@+id/news_title"
+    <include android:id="@+id/fragment_menutopnav"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         layout="@layout/fragment_menutopnav"/>

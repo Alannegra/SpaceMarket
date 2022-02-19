@@ -14,27 +14,18 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 public class fragment_menutopnav extends Fragment {
-    ImageView imageView;
-    NavController navController;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+        }
+    }
 
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        navController = Navigation.findNavController(view);
-        imageView = view.findViewById(R.id.exclamacion);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_fragment_menutopnav_to_options1Fragment);
-            }
-        });
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
     }
 
