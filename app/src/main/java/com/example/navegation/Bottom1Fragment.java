@@ -19,7 +19,8 @@ import android.widget.ImageView;
  * create an instance of this fragment.
  */
 public class Bottom1Fragment extends Fragment {
-    ImageView imageView;
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
     NavController navController;
 
 
@@ -28,11 +29,25 @@ public class Bottom1Fragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-        imageView = view.findViewById(R.id.exclamacion);
-        imageView.setOnClickListener(new View.OnClickListener() {
+        exclamacion = view.findViewById(R.id.exclamacion);
+        exclamacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_fragment_menutopnav_to_options1Fragment);
+            }
+        });
+        carmarket = view.findViewById(R.id.carmarketbutton);
+        carmarket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_fragment_menubotnav_to_bottom2Fragment);
+            }
+        });
+        earth = view.findViewById(R.id.earthbutton);
+        earth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_fragment_menubotnav_to_bottom3Fragment);
             }
         });
     }

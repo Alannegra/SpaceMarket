@@ -31,10 +31,12 @@
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <include android:id="@+id/news_title"
+            <!--<include android:id="@+id/news_title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                layout="@layout/fragment_menutopnav"/>
+                layout="@layout/fragment_menutopnav"/>-->
+
+
 
             <androidx.fragment.app.FragmentContainerView
                 android:name="androidx.navigation.fragment.NavHostFragment"
@@ -44,7 +46,7 @@
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/main_graph" />
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
+            <!--<com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_nav_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -52,7 +54,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:menu="@menu/bottom_menu" />
+                app:menu="@menu/bottom_menu" />-->
 
 
 

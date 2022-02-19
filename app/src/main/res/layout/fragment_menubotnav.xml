@@ -41,11 +41,11 @@
             android:layout_height="50dp"
             android:src="@drawable/shoping"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/earth"
+            app:layout_constraintEnd_toStartOf="@+id/earthbutton"
             app:layout_constraintStart_toEndOf="@+id/map" />
 
         <ImageView
-            android:id="@+id/earth"
+            android:id="@+id/earthbutton"
             android:layout_width="45dp"
             android:layout_height="40dp"
             android:layout_marginBottom="8dp"
