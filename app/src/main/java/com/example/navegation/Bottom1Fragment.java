@@ -36,6 +36,13 @@ public class Bottom1Fragment extends Fragment {
                 navController.navigate(R.id.action_fragment_menutopnav_to_options1Fragment);
             }
         });
+        profile = view.findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_fragment_menutopnav_to_options2Fragment);
+            }
+        });
         carmarket = view.findViewById(R.id.carmarketbutton);
         carmarket.setOnClickListener(new View.OnClickListener() {
             @Override
