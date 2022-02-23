@@ -30,7 +30,7 @@
             android:layout_height="50dp"
 
 
-            android:src="@drawable/mapa"
+            android:src="@drawable/mapawhite"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/carmarketbutton"
             app:layout_constraintStart_toStartOf="parent" />
