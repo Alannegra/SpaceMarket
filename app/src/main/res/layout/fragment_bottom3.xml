@@ -7,11 +7,6 @@
     tools:context=".Bottom3Fragment"
     android:background="@drawable/galaxy">
 
-
-
-
-
-
     <ImageView
         android:id="@+id/fakenavbartop"
         android:layout_width="wrap_content"
