@@ -5,5 +5,6 @@
     <string name="usuario">Hello blank fragment</string>
     <string name="password">Hello blank fragment</string>
     <string name="signin">Sign In</string>
+    <string name="signout">Sign Out</string>
 
 </resources>
