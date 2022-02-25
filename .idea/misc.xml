@@ -45,6 +45,8 @@
         <entry key="app/src/main/res/layout/fragment_options1.xml" value="0.2595108695652174" />
         <entry key="app/src/main/res/layout/fragment_options2.xml" value="0.2595108695652174" />
         <entry key="app/src/main/res/layout/fragment_options3.xml" value="0.27309782608695654" />
+        <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.2890625" />
+        <entry key="app/src/main/res/layout/fragment_sign_out.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.25" />
         <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/menu/options_menu.xml" value="0.33" />

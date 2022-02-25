@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/fragment_login">
+    app:startDestination="@id/signOut">
 
     <fragment
         android:id="@+id/bottom1Fragment"
@@ -78,6 +78,20 @@
         android:name="com.example.navegation.Menubotnav"
         android:label="fragment_menubotnav"
         tools:layout="@layout/fragment_menubotnav" />
+    <fragment
+        android:id="@+id/signOut"
+        android:name="com.example.navegation.SignOut"
+        android:label="fragment_sign_out"
+        tools:layout="@layout/fragment_sign_out" />
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.navegation.SignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signIn_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+    </fragment>
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
