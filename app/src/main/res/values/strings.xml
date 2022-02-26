@@ -6,5 +6,7 @@
     <string name="password">Hello blank fragment</string>
     <string name="signin">Sign In</string>
     <string name="signout">Sign Out</string>
+    <string name="loreimspum">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+    <string name="money">56.000,45€</string>
 
 </resources>

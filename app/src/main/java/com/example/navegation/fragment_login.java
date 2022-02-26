@@ -13,24 +13,33 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class fragment_login extends Fragment {
     ImageView imageView;
     NavController navController;
     Button button;
+    TextView textView,textView2;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-        button = view.findViewById(R.id.loginbutton);
 
-
-        button.setOnClickListener(new View.OnClickListener() {
+        textView = view.findViewById(R.id.cohetesignin);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_fragment_login_to_bottom1Fragment);
+                navController.navigate(R.id.action_fragment_login_to_signIn);
+            }
+        });
+
+        textView2 = view.findViewById(R.id.cohetesignout);
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_fragment_login_to_signOut);
             }
         });
 
