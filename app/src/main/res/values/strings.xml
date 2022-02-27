@@ -8,5 +8,11 @@
     <string name="signout">Sign Out</string>
     <string name="loreimspum">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
     <string name="money">56.000,45€</string>
+    <string name="ups">¡Ups!</string>
+    <string name="voidspacecart">Parece que tu space cart esta vacío</string>
+    <string name="reclamacion">Escriba su texto</string>
+    <string name="send">Enviar</string>
+    <string name="reclamaciontext">Reclamaciones</string>
+    <string name="molestias">Lamentamos las molestias</string>
 
 </resources>

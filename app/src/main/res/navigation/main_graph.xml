@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/earthItem">
+    app:startDestination="@id/options1Fragment">
 
     <fragment
         android:id="@+id/bottom1Fragment"
@@ -96,6 +96,11 @@
         android:name="com.example.navegation.EarthItem"
         android:label="fragment_earth_item"
         tools:layout="@layout/fragment_earth_item" />
+    <fragment
+        android:id="@+id/bottom2Shop"
+        android:name="com.example.navegation.bottom2Shop"
+        android:label="fragment_bottom2_shop"
+        tools:layout="@layout/fragment_bottom2_shop" />
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
