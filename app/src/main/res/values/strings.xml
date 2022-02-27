@@ -14,5 +14,8 @@
     <string name="send">Enviar</string>
     <string name="reclamaciontext">Reclamaciones</string>
     <string name="molestias">Lamentamos las molestias</string>
+    <string name="cuenta">Cuenta</string>
+    <string name="logout">Logout</string>
+    <string name="eliminar">Eliminar cuenta</string>
 
 </resources>

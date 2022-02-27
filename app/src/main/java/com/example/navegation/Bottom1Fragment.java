@@ -71,4 +71,7 @@ public class Bottom1Fragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_bottom1, container, false);
     }
+
+
+
 }

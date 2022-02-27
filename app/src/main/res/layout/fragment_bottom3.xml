@@ -64,25 +64,71 @@
                 android:id="@+id/imageView"
                 android:layout_width="99dp"
                 android:layout_height="99dp"
+                android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView20"
-                app:layout_constraintTop_toTopOf="@+id/imageView20" />
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal1" />
             <!--android:scaleType="centerCrop"-->
 
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="99dp"
                 android:layout_height="99dp"
+                android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toStartOf="@+id/imageView20"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView20" />
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal1" />
 
             <ImageView
                 android:id="@+id/imageView20"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal1" />
+
+            <ImageView
+                android:id="@+id/whitehorizontal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal2" />
+
+            <ImageView
+                android:id="@+id/whitehorizontal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -90,86 +136,160 @@
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal3" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/whitehorizontal4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal3" />
+
+            <ImageView
+                android:id="@+id/whitehorizontal5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal4" />
+
+            <ImageView
+                android:id="@+id/whitehorizontal6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal5" />
+
+            <ImageView
+                android:id="@+id/whitehorizontal7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+            <ImageView
+                android:id="@+id/imageView7"
                 android:layout_width="99dp"
                 android:layout_height="99dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal" />
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal6" />
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
-                android:src="@drawable/earth"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
-                android:src="@drawable/earth"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
-                android:src="@drawable/earth"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-            <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/whitehorizontal8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/earth"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/earth"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/earth"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
             <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal7" />
+
+            <ImageView
+                android:id="@+id/whitehorizontal9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
             <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageView9"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal8" />
+
+            <ImageView
+                android:id="@+id/whitehorizontal10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scaleX="2"
+                android:src="@drawable/whitehorizontalstick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal9" />
+
+
 
             <ImageView
                 android:id="@+id/imageView14"
@@ -193,41 +313,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/whitehorizontal3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:scaleX="2"
-                android:src="@drawable/whitehorizontalstick"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal1" />
 
-            <ImageView
-                android:id="@+id/whitehorizontal2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:scaleX="2"
-                android:src="@drawable/whitehorizontalstick"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView20" />
-
-            <ImageView
-                android:id="@+id/whitehorizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:scaleX="2"
-                android:src="@drawable/whitehorizontalstick"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal2" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
