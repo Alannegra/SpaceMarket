@@ -6,9 +6,10 @@
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_bottom1.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_bottom2.xml" value="0.33" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_bottom3.xml" value="0.22" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_bottom3.xml" value="0.5" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_earth_item.xml" value="0.33" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_login.xml" value="0.6803840877914952" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_fake_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_menubotnav.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_menutopnav.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_option12.xml" value="0.36666666666666664" />
@@ -16,7 +17,7 @@
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_options1.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_options2.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_sign_in.xml" value="0.33" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_sign_out.xml" value="0.1" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_sign_out.xml" value="0.33" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Figma/app/src/main/res/layout/fragment_tutorial.xml" value="0.33" />
         <entry key="..\:/Users/chaos/AndroidStudioProjects/Navegation/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/chaos/AndroidStudioProjects/Navegation/app/src/main/res/layout/drawer_header.xml" value="0.1359375" />

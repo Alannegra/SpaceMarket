@@ -11,31 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/gifImageView2"
+        <include android:id="@+id/fakeLogin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:rotation="90"
-            android:scaleX="2"
-            android:scaleY="2"
-            android:src="@drawable/intro"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></pl.droidsonroids.gif.GifImageView>
+            layout="@layout/fragment_fake_login"/>
 
-        <!--<ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleX="3.2"
-            android:scaleY="3.2"
-            android:src="@drawable/intro"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />-->
-
-        <Button
+        <!--<Button
             android:id="@+id/loginbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,6 +25,18 @@
             android:text="@string/signin"
             android:textColor="@color/black"
             android:theme="@style/Platform.MaterialComponents.Light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />-->
+
+
+        <com.royrodriguez.transitionbutton.TransitionButton
+            android:id="@+id/transition_button"
+            android:layout_width="353dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/signin"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />

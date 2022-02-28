@@ -5,59 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SignOut"
-    android:background="@drawable/galaxy">
+    tools:context=".SignOut">
 
-
-
-    <com.google.android.flexbox.FlexboxLayout
+    <include android:id="@+id/fakeLogin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:flexDirection="row"
-        app:justifyContent="center"
-        app:flexWrap="wrap"
-        app:alignItems="center">
+        layout="@layout/fragment_fake_login"/>
+
+    <com.vinaygaba.creditcardview.CreditCardView
+        android:id="@+id/card1"
+        android:layout_width="fill_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/cardbackground_world"
+        app:cardName="Vinay Gaba"
+        app:cardNameTextColor="#cccccc"
+        app:cardNumber="5500005555555559"
+        app:cardNumberFormat="masked_all_but_last_four"
+        app:cardNumberTextColor="#cccccc"
+        app:expiryDate="02/22"
+        app:expiryDateTextColor="#cccccc"
+        app:hintTextColor="#cccccc"
+        app:isEditable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:putChip="true"
+        app:type="auto"
+        app:validTillTextColor="#cccccc" >
+    </com.vinaygaba.creditcardview.CreditCardView>
 
 
-        <Button
-            android:id="@+id/button_default"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-        android:onClick="lanzaShowCaseView"
-        android:text="ShowCaseView"/>
-
-        <Button
-            android:id="@+id/button_actionCall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:onClick="lanzaShowCaseView"
-            android:text="ShowCaseView"/>
-
-        <Button
-            android:id="@+id/button_custom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:onClick="lanzaShowCaseView"
-            android:text="ShowCaseView"/>
-
-        <Button
-            android:id="@+id/button_showcase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:onClick="lanzaShowCaseView"
-            android:text="ShowCaseView"/>
-
-
-
-
-    </com.google.android.flexbox.FlexboxLayout>
-
-
-
+    <com.royrodriguez.transitionbutton.TransitionButton
+        android:id="@+id/transition_button"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:text="@string/signout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 

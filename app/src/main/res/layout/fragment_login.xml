@@ -11,19 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/gifImageView"
+        <include android:id="@+id/fakeLogin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:rotation="90"
-            android:scaleX="2"
-            android:scaleY="2"
-            android:src="@drawable/intro"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></pl.droidsonroids.gif.GifImageView>
-        
+            layout="@layout/fragment_fake_login"/>
+
+
         <!--<ImageView
             android:id="@+id/imageView9"
             android:layout_width="wrap_content"
@@ -43,7 +36,7 @@
             android:src="@drawable/rocket"
             app:layout_constraintBottom_toTopOf="@+id/cohete2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/gifImageView" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/cohete2"

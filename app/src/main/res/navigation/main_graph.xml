@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/tutorial">
+    app:startDestination="@id/fragment_login">
 
     <fragment
         android:id="@+id/bottom1Fragment"
@@ -81,7 +81,11 @@
         android:id="@+id/signOut"
         android:name="com.example.navegation.SignOut"
         android:label="fragment_sign_out"
-        tools:layout="@layout/fragment_sign_out" />
+        tools:layout="@layout/fragment_sign_out" >
+        <action
+            android:id="@+id/action_signOut_to_tutorial"
+            app:destination="@id/tutorial" />
+    </fragment>
     <fragment
         android:id="@+id/signIn"
         android:name="com.example.navegation.SignIn"
@@ -110,6 +114,11 @@
             android:id="@+id/action_tutorial_to_bottom1Fragment"
             app:destination="@id/bottom1Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/fakeLogin"
+        android:name="com.example.navegation.FakeLogin"
+        android:label="fragment_fake_login"
+        tools:layout="@layout/fragment_fake_login" />
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
