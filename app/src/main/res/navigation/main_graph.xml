@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/fragment_login">
+    app:startDestination="@id/tutorial">
 
     <fragment
         android:id="@+id/bottom1Fragment"
@@ -88,8 +88,8 @@
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
-            android:id="@+id/action_signIn_to_bottom1Fragment"
-            app:destination="@id/bottom1Fragment" />
+            android:id="@+id/action_signIn_to_tutorial"
+            app:destination="@id/tutorial" />
     </fragment>
     <fragment
         android:id="@+id/earthItem"
@@ -101,6 +101,15 @@
         android:name="com.example.navegation.bottom2Shop"
         android:label="fragment_bottom2_shop"
         tools:layout="@layout/fragment_bottom2_shop" />
+    <fragment
+        android:id="@+id/tutorial"
+        android:name="com.example.navegation.tutorial"
+        android:label="fragment_tutorial"
+        tools:layout="@layout/fragment_tutorial" >
+        <action
+            android:id="@+id/action_tutorial_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+    </fragment>
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"

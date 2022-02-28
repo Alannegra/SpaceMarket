@@ -14,23 +14,28 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class SignIn extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link tutorial#} factory method to
+ * create an instance of this fragment.
+ */
+public class tutorial extends Fragment {
+
     ImageView imageView;
     NavController navController;
-    Button button;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-        button = view.findViewById(R.id.loginbutton);
+        imageView = view.findViewById(R.id.mapbutton);
 
 
-        button.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_signIn_to_tutorial);
+                navController.navigate(R.id.action_tutorial_to_bottom1Fragment);
             }
         });
 
@@ -47,6 +52,6 @@ public class SignIn extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sign_in, container, false);
+        return inflater.inflate(R.layout.fragment_tutorial, container, false);
     }
 }

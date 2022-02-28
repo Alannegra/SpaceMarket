@@ -61,46 +61,75 @@ public class MainActivity extends AppCompatActivity {
 
         View botonBasico      = findViewById(R.id.button_default);
         View botonActionCall  = findViewById(R.id.button_actionCall);
+        View botonActionCall2  = findViewById(R.id.button_actionCall2);
+        View botonActionCall3  = findViewById(R.id.button_actionCall3);
         View botonCustom      = findViewById(R.id.button_custom);
         View botonShowCase    = findViewById(R.id.button_showcase);
+
 
         Animation animation = new AlphaAnimation(0.0f,1.0f);
         animation.setDuration(250);
 
         final FancyShowCaseView fancyShowCaseWelcome = new FancyShowCaseView.Builder(this)
-                .title("Con esta guía tendrás una explicación rápida de los diferentes botones de la aplicación.")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER)
-                .backgroundColor(R.color.showCaseBackground)
+                .title("Bienvenido a Spacemarket")
+                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .backgroundColor(R.color.black)
+                .focusBorderColor(Color.BLACK)
+                .focusBorderSize(5)
                 .build();
 
         final FancyShowCaseView fancyShowCaseView1 = new FancyShowCaseView.Builder(this)
-                .title("Con este tipo de SnackBar podrás mostrar un mensaje básico y sin personalización.")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER | Gravity.BOTTOM)
-                .backgroundColor(R.color.showCaseBackground)
-                .focusBorderColor(Color.BLUE)
+                .title("Mapa")
+                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .backgroundColor(R.color.black)
+                .focusBorderColor(Color.BLACK)
                 .focusBorderSize(5)
                 .focusOn(botonBasico)
                 .build();
 
-        final FancyShowCaseView fancyShowCaseView2 = new FancyShowCaseView.Builder(this)
-                .title("Con este SnackBar se añade un TextButton con el que el usuario podrá interaccionar.")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER | Gravity.BOTTOM)
-                .backgroundColor(R.color.showCaseBackground)
-                .focusCircleRadiusFactor(1.5)
+        final FancyShowCaseView fancyShowCaseView6 = new FancyShowCaseView.Builder(this)
+                .title("Exclamacion")
+                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .backgroundColor(R.color.black)
+                .focusBorderColor(Color.BLACK)
+                .focusBorderSize(5)
                 .focusOn(botonActionCall)
                 .build();
 
+
+        final FancyShowCaseView fancyShowCaseView2 = new FancyShowCaseView.Builder(this)
+                .title("Spacecart")
+                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .backgroundColor(R.color.black)
+                .focusBorderColor(Color.BLACK)
+                .focusBorderSize(5)
+                .focusOn(botonActionCall2)
+                .build();
+
+        final FancyShowCaseView fancyShowCaseView7 = new FancyShowCaseView.Builder(this)
+                .title("Earth")
+                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .backgroundColor(R.color.black)
+                .focusBorderColor(Color.BLACK)
+                .focusBorderSize(5)
+                .focusOn(botonActionCall3)
+                .build();
+
         final FancyShowCaseView fancyShowCaseView3 = new FancyShowCaseView.Builder(this)
-                .title("Con este SnackBar podrás personalizar el mensaje mostrado.")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER | Gravity.TOP)
-                .backgroundColor(R.color.showCaseBackground)
+                .title("borrar")
+                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .backgroundColor(R.color.black)
+                .focusBorderColor(Color.BLACK)
+                .focusBorderSize(5)
                 .focusOn(botonCustom)
                 .build();
 
         final FancyShowCaseView fancyShowCaseExit = new FancyShowCaseView.Builder(this)
-                .title("Con este ejercicio has aprendido a utilizar la librería FancyShowCaseView!")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER)
-                .backgroundColor(R.color.showCaseBackground)
+                .title("Profile")
+                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .backgroundColor(R.color.black)
+                .focusBorderColor(Color.BLACK)
+                .focusBorderSize(5)
                 .focusOn(botonShowCase)
                 .build();
 
@@ -108,7 +137,8 @@ public class MainActivity extends AppCompatActivity {
                 .add(fancyShowCaseWelcome)
                 .add(fancyShowCaseView1)
                 .add(fancyShowCaseView2)
-                .add(fancyShowCaseView3)
+                .add(fancyShowCaseView7)
+                .add(fancyShowCaseView6)
                 .add(fancyShowCaseExit);
         mQueue.show();
 
