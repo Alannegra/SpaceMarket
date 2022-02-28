@@ -7,10 +7,6 @@
     tools:context=".Bottom3Fragment"
     android:background="@drawable/galaxy">
 
-
-
-
-
     <ImageView
         android:id="@+id/fakenavbartop"
         android:layout_width="wrap_content"
@@ -54,8 +50,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/marte"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,8 +61,8 @@
 
             <ImageView
                 android:id="@+id/imageView15"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toStartOf="@+id/imageView20"
@@ -100,9 +96,29 @@
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:layout_marginTop="4dp"
-                android:src="@drawable/earth"
+                android:src="@drawable/neptune"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal2" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/sunitem"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/moon"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal2" />
+
+            <ImageView
+                android:id="@+id/imageView15D"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/pluton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal2" />
 
             <ImageView
@@ -122,9 +138,29 @@
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:layout_marginTop="4dp"
-                android:src="@drawable/earth"
+                android:src="@drawable/urano"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal3" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageView3E"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/sun"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal3" />
+
+            <ImageView
+                android:id="@+id/imageView3D"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/mercurio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal3" />
 
             <ImageView
@@ -144,10 +180,30 @@
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:layout_marginTop="4dp"
-                android:src="@drawable/earth"
+                android:src="@drawable/urano"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal3" />
+
+            <ImageView
+                android:id="@+id/imageView4E"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/trtesayuer"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal4" />
+
+            <ImageView
+                android:id="@+id/imageView4D"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal4" />
 
             <ImageView
                 android:id="@+id/whitehorizontal5"
@@ -166,10 +222,30 @@
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:layout_marginTop="4dp"
-                android:src="@drawable/earth"
+                android:src="@drawable/ape"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal4" />
+
+            <ImageView
+                android:id="@+id/imageView5E"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/trtesayuer"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal5" />
+
+            <ImageView
+                android:id="@+id/imageView5D"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/cybertron"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal5" />
 
             <ImageView
                 android:id="@+id/whitehorizontal6"
@@ -188,10 +264,30 @@
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:layout_marginTop="4dp"
-                android:src="@drawable/earth"
+                android:src="@drawable/ape"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal5" />
+
+            <ImageView
+                android:id="@+id/imageView6E"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal6" />
+
+            <ImageView
+                android:id="@+id/imageView6D"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal6" />
 
             <ImageView
                 android:id="@+id/whitehorizontal7"
@@ -207,13 +303,33 @@
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal6" />
+
+            <ImageView
+                android:id="@+id/imageView7E"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal7" />
+
+            <ImageView
+                android:id="@+id/imageView7D"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal7" />
 
             <ImageView
                 android:id="@+id/whitehorizontal8"
@@ -229,13 +345,33 @@
 
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/whitehorizontal7" />
+
+            <ImageView
+                android:id="@+id/imageView8E"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toStartOf="@+id/imageView20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal8" />
+
+            <ImageView
+                android:id="@+id/imageView8D"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/earth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal8" />
 
             <ImageView
                 android:id="@+id/whitehorizontal9"
@@ -251,8 +387,8 @@
 
             <ImageView
                 android:id="@+id/imageView9"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/earth"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -270,17 +406,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView9" />
-
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="99dp"
-                android:layout_height="99dp"
-                android:layout_marginTop="4dp"
-                android:src="@drawable/earth"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/whitehorizontal9" />
-
 
             <ImageView
                 android:id="@+id/imageView14"

@@ -13,15 +13,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import pl.droidsonroids.gif.GifImageView;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Bottom3Fragment#newInstance} factory method to
+ * Use the {@link Bottom3Fragment} factory method to
  * create an instance of this fragment.
  */
 public class Bottom3Fragment extends Fragment {
 
     ImageView imageView;
     NavController navController;
+    GifImageView gifImageView;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -30,6 +33,14 @@ public class Bottom3Fragment extends Fragment {
         navController = Navigation.findNavController(view);
         imageView = view.findViewById(R.id.exclamacion);
         imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_fragment_menutopnav_to_options1Fragment);
+            }
+        });
+
+        gifImageView = view.findViewById(R.id.sunitem);
+        gifImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_fragment_menutopnav_to_options1Fragment);
