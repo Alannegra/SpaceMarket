@@ -2,11 +2,18 @@ package com.example.navegation;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import pl.droidsonroids.gif.GifImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +33,27 @@ public class EarthItem extends Fragment {
 
     public EarthItem() {
         // Required empty public constructor
+    }
+
+
+    ImageView imageView;
+    NavController navController;
+    GifImageView gifImageView;
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        navController = Navigation.findNavController(view);
+
+
+        imageView = view.findViewById(R.id.imageView24);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_earthItem_to_bottom2Shop);
+            }
+        });
     }
 
     /**

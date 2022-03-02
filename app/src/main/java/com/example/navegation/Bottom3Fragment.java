@@ -43,7 +43,7 @@ public class Bottom3Fragment extends Fragment {
         gifImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_fragment_menutopnav_to_options1Fragment);
+                navController.navigate(R.id.action_bottom3Fragment_to_earthItem);
             }
         });
     }
