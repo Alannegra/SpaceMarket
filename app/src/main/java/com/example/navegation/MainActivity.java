@@ -15,6 +15,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.aghajari.axanimation.AXAnimation;
 import com.example.navegation.databinding.ActivityMainBinding;
 
 import me.toptas.fancyshowcase.FancyShowCaseQueue;
@@ -58,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void lanzaShowCaseView(View view){
+
+
+
 
         View botonBasico      = findViewById(R.id.button_default);
         View botonActionCall  = findViewById(R.id.button_actionCall);

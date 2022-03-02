@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
+import com.aghajari.axanimation.AXAnimation;
 import com.royrodriguez.transitionbutton.TransitionButton;
 
 import me.toptas.fancyshowcase.FancyShowCaseQueue;
@@ -48,6 +49,14 @@ public class SignOut extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
+        AXAnimation.create()
+                .duration(1000)
+                .alpha(1f)
+                .nextSection()
+                .scale(1.5f, 1.25f, 1.8f)
+                .start(view.findViewById(R.id.transition_button));
 
         navController = Navigation.findNavController(view);
         transitionButton = view.findViewById(R.id.transition_button);

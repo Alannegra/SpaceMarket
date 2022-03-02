@@ -15,6 +15,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.aghajari.axanimation.AXAnimation;
+
 public class fragment_login extends Fragment {
     ImageView imageView;
     NavController navController;
@@ -24,6 +26,20 @@ public class fragment_login extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        AXAnimation.create()
+                .duration(1000)
+                .alpha(1f)
+                .nextSection()
+                .scale(1.25f, 1f, 1.5f,1.25f, 1f)
+                .start(view.findViewById(R.id.cohete2));
+
+        AXAnimation.create()
+                .duration(1000)
+                .alpha(1f)
+                .nextSection()
+                .scale(1.25f, 1f, 1.5f,1.25f, 1f)
+                .start(view.findViewById(R.id.imageView16));
 
         navController = Navigation.findNavController(view);
 
