@@ -22,5 +22,6 @@
     <string name="creditcard">Tarjeta de credito</string>
     <string name="pagar">Pagar</string>
     <string name="spacecart">Space cart</string>
+    <string name="sol">Sol</string>
 
 </resources>
