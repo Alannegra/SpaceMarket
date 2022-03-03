@@ -27,5 +27,10 @@
     <string name="realizado">Pago Realizado con exito</string>
     <string name="price">56.000,45€</string>
     <string name="fecha">22/11/2021</string>
+    <string name="alan">Alan</string>
+    <string name="rodriguez">Alan Rodríguez</string>
+    <string name="no">No</string>
+    <string name="si">Si</string>
+    <string name="estasseguro">¿Estas Seguro?</string>
 
 </resources>

@@ -88,7 +88,6 @@
             android:autofillHints="@string/password"
             android:backgroundTint="#80FFFFFF"
 
-
             android:hint="Password"
             android:inputType="textPassword"
 

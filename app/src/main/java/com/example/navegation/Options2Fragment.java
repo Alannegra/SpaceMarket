@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -35,7 +36,8 @@ public class Options2Fragment extends Fragment {
     }
 
     NavController navController;
-    TextView textView;
+    TextView textView,textView2,textView3,si,no,estas;
+    ImageView spinner,spinner2,rectangulo;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -50,6 +52,80 @@ public class Options2Fragment extends Fragment {
                 navController.navigate(R.id.action_options2Fragment_to_profile2);
             }
         });
+
+
+        textView2 = view.findViewById(R.id.textView15);
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_options2Fragment_to_fragment_login);
+            }
+        });
+
+
+        si = view.findViewById(R.id.si);
+        no = view.findViewById(R.id.no);
+        spinner = view.findViewById(R.id.imageView40);
+        spinner2 = view.findViewById(R.id.imageView41);
+        rectangulo = view.findViewById(R.id.imageView39);
+        estas = view.findViewById(R.id.textView19);
+
+        textView3 = view.findViewById(R.id.textView13);
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                estas.setVisibility(View.VISIBLE);
+                si.setVisibility(View.VISIBLE);
+                no.setVisibility(View.VISIBLE);
+                spinner.setVisibility(View.VISIBLE);
+                spinner2.setVisibility(View.VISIBLE);
+                rectangulo.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+        si.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.exit(0);
+            }
+
+        });
+
+        spinner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.exit(0);
+            }
+        });
+
+        no.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                estas.setVisibility(View.INVISIBLE);
+                si.setVisibility(View.INVISIBLE);
+                no.setVisibility(View.INVISIBLE);
+                spinner.setVisibility(View.INVISIBLE);
+                spinner2.setVisibility(View.INVISIBLE);
+                rectangulo.setVisibility(View.INVISIBLE);
+            }
+
+        });
+
+        spinner2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                estas.setVisibility(View.INVISIBLE);
+                si.setVisibility(View.INVISIBLE);
+                no.setVisibility(View.INVISIBLE);
+                spinner.setVisibility(View.INVISIBLE);
+                spinner2.setVisibility(View.INVISIBLE);
+                rectangulo.setVisibility(View.INVISIBLE);
+            }
+
+        });
+
+
 
     }
 

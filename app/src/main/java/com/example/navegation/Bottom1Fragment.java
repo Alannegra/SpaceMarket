@@ -21,6 +21,7 @@ import android.widget.ImageView;
 public class Bottom1Fragment extends Fragment {
     ImageView profile,exclamacion;
     ImageView map,carmarket,earth;
+    ImageView backgroundmap;
     NavController navController;
 
 
@@ -57,6 +58,12 @@ public class Bottom1Fragment extends Fragment {
                 navController.navigate(R.id.action_fragment_menubotnav_to_bottom3Fragment);
             }
         });
+
+
+        backgroundmap = view.findViewById(R.id.backgroundmap);
+
+
+
     }
 
     @Override

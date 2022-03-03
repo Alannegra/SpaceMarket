@@ -39,7 +39,7 @@
         android:layout_height="225dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/cardbackground_world"
-        app:cardName="Alan Rodriguez"
+        app:cardName="@string/rodriguez"
         app:cardNameTextColor="#cccccc"
         app:cardNumber="5500005555555559"
         app:cardNumberFormat="masked_all_but_last_four"

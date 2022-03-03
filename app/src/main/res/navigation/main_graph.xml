@@ -57,6 +57,9 @@
         <action
             android:id="@+id/action_options2Fragment_to_profile2"
             app:destination="@id/profile2" />
+        <action
+            android:id="@+id/action_options2Fragment_to_fragment_login"
+            app:destination="@id/fragment_login" />
     </fragment>
     <fragment
         android:id="@+id/fragment_menutopnav"
