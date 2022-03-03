@@ -53,7 +53,11 @@
         android:id="@+id/options2Fragment"
         android:name="com.example.navegation.Options2Fragment"
         android:label="fragment_options2"
-        tools:layout="@layout/fragment_options2" />
+        tools:layout="@layout/fragment_options2" >
+        <action
+            android:id="@+id/action_options2Fragment_to_profile2"
+            app:destination="@id/profile2" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_menutopnav"
         android:name="com.example.navegation.fragment_menutopnav"
@@ -153,6 +157,11 @@
         android:name="com.example.navegation.Bottom2ShopFinal"
         android:label="fragment_bottom2_shop_final"
         tools:layout="@layout/fragment_bottom2_shop_final" />
+    <fragment
+        android:id="@+id/profile2"
+        android:name="com.example.navegation.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
