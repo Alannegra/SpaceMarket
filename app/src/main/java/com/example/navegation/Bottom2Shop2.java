@@ -14,14 +14,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import pl.droidsonroids.gif.GifImageView;
-
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link bottom2Shop#newInstance} factory method to
+ * Use the {@link Bottom2Shop2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class bottom2Shop extends Fragment {
+public class Bottom2Shop2 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -32,10 +30,9 @@ public class bottom2Shop extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public bottom2Shop() {
+    public Bottom2Shop2() {
         // Required empty public constructor
     }
-
 
     ImageView imageView;
     NavController navController;
@@ -48,19 +45,19 @@ public class bottom2Shop extends Fragment {
         navController = Navigation.findNavController(view);
 
 
-        imageView = view.findViewById(R.id.tarjetabutton);
+        imageView = view.findViewById(R.id.pagarbutton);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_bottom2Shop_to_creditcard);
+                navController.navigate(R.id.action_bottom2Shop2_to_bottom2ShopFinal);
             }
         });
 
-        textView = view.findViewById(R.id.tarjetabutton2);
+        textView = view.findViewById(R.id.pagarbutton2);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_bottom2Shop_to_creditcard);
+                navController.navigate(R.id.action_bottom2Shop2_to_bottom2ShopFinal);
             }
         });
     }
@@ -71,11 +68,11 @@ public class bottom2Shop extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment bottom2Shop.
+     * @return A new instance of fragment Bottom2Shop2.
      */
     // TODO: Rename and change types and number of parameters
-    public static bottom2Shop newInstance(String param1, String param2) {
-        bottom2Shop fragment = new bottom2Shop();
+    public static Bottom2Shop2 newInstance(String param1, String param2) {
+        Bottom2Shop2 fragment = new Bottom2Shop2();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -96,8 +93,6 @@ public class bottom2Shop extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bottom2_shop, container, false);
+        return inflater.inflate(R.layout.fragment_bottom2_shop2, container, false);
     }
-
-
 }

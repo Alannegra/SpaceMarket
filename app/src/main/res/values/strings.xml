@@ -23,5 +23,9 @@
     <string name="pagar">Pagar</string>
     <string name="spacecart">Space cart</string>
     <string name="sol">Sol</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="realizado">Pago Realizado con exito</string>
+    <string name="price">56.000,45€</string>
+    <string name="fecha">22/11/2021</string>
 
 </resources>

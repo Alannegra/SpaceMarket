@@ -111,7 +111,11 @@
         android:id="@+id/bottom2Shop"
         android:name="com.example.navegation.bottom2Shop"
         android:label="fragment_bottom2_shop"
-        tools:layout="@layout/fragment_bottom2_shop" />
+        tools:layout="@layout/fragment_bottom2_shop" >
+        <action
+            android:id="@+id/action_bottom2Shop_to_creditcard"
+            app:destination="@id/creditcard" />
+    </fragment>
     <fragment
         android:id="@+id/tutorial"
         android:name="com.example.navegation.tutorial"
@@ -126,6 +130,29 @@
         android:name="com.example.navegation.FakeLogin"
         android:label="fragment_fake_login"
         tools:layout="@layout/fragment_fake_login" />
+    <fragment
+        android:id="@+id/creditcard"
+        android:name="com.example.navegation.Creditcard"
+        android:label="fragment_creditcard"
+        tools:layout="@layout/fragment_creditcard" >
+        <action
+            android:id="@+id/action_creditcard_to_bottom2Shop2"
+            app:destination="@id/bottom2Shop2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom2Shop2"
+        android:name="com.example.navegation.Bottom2Shop2"
+        android:label="fragment_bottom2_shop2"
+        tools:layout="@layout/fragment_bottom2_shop2" >
+        <action
+            android:id="@+id/action_bottom2Shop2_to_bottom2ShopFinal"
+            app:destination="@id/bottom2ShopFinal" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom2ShopFinal"
+        android:name="com.example.navegation.Bottom2ShopFinal"
+        android:label="fragment_bottom2_shop_final"
+        tools:layout="@layout/fragment_bottom2_shop_final" />
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
