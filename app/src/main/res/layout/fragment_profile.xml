@@ -48,18 +48,89 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
+        android:id="@+id/punto"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#949498"
         android:gravity="center"
+        android:inputType="textPassword"
         android:shadowColor="@color/black"
         android:shadowDx="5"
         android:shadowDy="4"
         android:shadowRadius="0.1"
         android:text="@string/eliminar"
-        android:inputType="textPassword"
         android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/pass"
+
+        />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:autofillHints="@string/usuario"
         android:backgroundTint="#949498"
+        android:gravity="center"
+        android:hint="@string/alan"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="4"
+        android:shadowRadius="0.1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/alan"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/alan" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#949498"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="4"
+        android:shadowRadius="0.1"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/punto" />
+
+    <TextView
+        android:id="@+id/alan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/risqueregular"
+        android:text="@string/user"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/punto"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintStart_toStartOf="@+id/imageView29" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/risqueregular"
+        android:text="@string/pass"
+        android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -67,55 +138,15 @@
         app:layout_constraintStart_toStartOf="@+id/imageView29"
         app:layout_constraintTop_toTopOf="@+id/imageView29" />
 
-        <EditText
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:autofillHints="@string/usuario"
-            android:textColorHint="@color/white"
-            android:backgroundTint="#949498"
-            android:hint="@string/alan"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowDx="5"
-            android:shadowDy="4"
-            android:shadowRadius="0.1"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView13"
-            app:layout_constraintEnd_toEndOf="@+id/imageView29"
-            app:layout_constraintStart_toStartOf="@+id/imageView29" />
+    <!--<include android:id="@+id/fragment_menutopnav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/fragment_menutopnav"/>
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/logout"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowDx="5"
-            android:shadowDy="4"
-            android:shadowRadius="0.1"
-            android:textColor="@color/white"
-            android:backgroundTint="#949498"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/imageView29"
-            app:layout_constraintStart_toStartOf="@+id/imageView29"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-        <!--<include android:id="@+id/fragment_menutopnav"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            layout="@layout/fragment_menutopnav"/>
-
-        <include android:id="@+id/fragment_menubotnav"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            layout="@layout/fragment_menubotnav"/>-->
+    <include android:id="@+id/fragment_menubotnav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/fragment_menubotnav"/>-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

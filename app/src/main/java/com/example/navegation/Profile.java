@@ -6,11 +6,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.aghajari.axanimation.AXAnimation;
 
@@ -52,8 +55,9 @@ public class Profile extends Fragment {
         return fragment;
     }
 
-
+    NavController navController;
     ImageView imageView;
+    TextView textView;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -84,6 +88,15 @@ public class Profile extends Fragment {
 
 
         }*/
+        navController = Navigation.findNavController(view);
+
+        textView = view.findViewById(R.id.textView15);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_profile2_to_fragment_login);
+            }
+        });
 
 
     }

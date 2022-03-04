@@ -171,7 +171,11 @@
         android:id="@+id/profile2"
         android:name="com.example.navegation.Profile"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile2_to_fragment_login"
+            app:destination="@id/fragment_login" />
+    </fragment>
     <fragment
         android:id="@+id/enviar"
         android:name="com.example.navegation.Enviar"

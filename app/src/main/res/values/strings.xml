@@ -33,5 +33,7 @@
     <string name="si">Si</string>
     <string name="estasseguro">¿Estas Seguro?</string>
     <string name="recla">¡Tu reclamacion a sido enviada con exito!</string>
+    <string name="user">User</string>
+    <string name="pass">Pass</string>
 
 </resources>
