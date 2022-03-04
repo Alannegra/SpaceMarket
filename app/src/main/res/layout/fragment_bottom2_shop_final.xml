@@ -36,11 +36,10 @@
     <ImageView
         android:id="@+id/imageView30"
         android:layout_width="wrap_content"
-        android:layout_height="220dp"
-        android:scaleX="2"
+        android:layout_height="240dp"
+        android:scaleX="3"
         android:src="@drawable/greenrectangle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fakenavbartop" />
 

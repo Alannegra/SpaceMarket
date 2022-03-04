@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_fragment_menubotnav_to_bottom3Fragment"
             app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_bottom1Fragment_to_earthItem"
+            app:destination="@id/earthItem" />
     </fragment>
 
 
@@ -202,6 +205,25 @@
             android:id="@+id/action_exclamacionConFoto_to_carreteDeFotos"
             app:destination="@id/carreteDeFotos" />
     </fragment>
+    <fragment
+        android:id="@+id/imagen1mapa"
+        android:name="com.example.navegation.Imagen1mapa"
+        android:label="fragment_imagen1mapa"
+        tools:layout="@layout/fragment_imagen1mapa" />
+    <fragment
+        android:id="@+id/imagen2mapa"
+        android:name="com.example.navegation.Imagen2mapa"
+        android:label="fragment_imagen2mapa"
+        tools:layout="@layout/fragment_imagen2mapa" >
+        <action
+            android:id="@+id/action_imagen2mapa_to_earthItem"
+            app:destination="@id/earthItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagen3mapa"
+        android:name="com.example.navegation.Imagen3mapa"
+        android:label="fragment_imagen3mapa"
+        tools:layout="@layout/fragment_imagen3mapa" />
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
