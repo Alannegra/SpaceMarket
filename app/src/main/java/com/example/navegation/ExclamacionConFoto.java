@@ -11,16 +11,15 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Options1Fragment#newInstance} factory method to
+ * Use the {@link ExclamacionConFoto#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Options1Fragment extends Fragment {
+public class ExclamacionConFoto extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +30,7 @@ public class Options1Fragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Options1Fragment() {
+    public ExclamacionConFoto() {
         // Required empty public constructor
     }
 
@@ -48,7 +47,7 @@ public class Options1Fragment extends Fragment {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_options1Fragment_to_enviar);
+                navController.navigate(R.id.action_exclamacionConFoto_to_enviar);
             }
         });
 
@@ -56,13 +55,12 @@ public class Options1Fragment extends Fragment {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_options1Fragment_to_carreteDeFotos);
+                navController.navigate(R.id.action_exclamacionConFoto_to_carreteDeFotos);
             }
         });
 
 
     }
-
 
     /**
      * Use this factory method to create a new instance of
@@ -70,11 +68,11 @@ public class Options1Fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Options1Fragment.
+     * @return A new instance of fragment ExclamacionConFoto.
      */
     // TODO: Rename and change types and number of parameters
-    public static Options1Fragment newInstance(String param1, String param2) {
-        Options1Fragment fragment = new Options1Fragment();
+    public static ExclamacionConFoto newInstance(String param1, String param2) {
+        ExclamacionConFoto fragment = new ExclamacionConFoto();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -95,6 +93,6 @@ public class Options1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_options1, container, false);
+        return inflater.inflate(R.layout.fragment_exclamacion_con_foto, container, false);
     }
 }

@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         final FancyShowCaseView fancyShowCaseWelcome = new FancyShowCaseView.Builder(this)
                 .title("Bienvenido a Spacemarket")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .titleStyle(R.style.showcaseText, Gravity.CENTER | Gravity.TOP)
                 .backgroundColor(R.color.black)
                 .focusBorderColor(Color.BLACK)
                 .focusBorderSize(5)
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
         final FancyShowCaseView fancyShowCaseView1 = new FancyShowCaseView.Builder(this)
                 .title("Mapa")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .titleStyle(R.style.showcaseText, Gravity.BOTTOM | Gravity.CENTER)
                 .backgroundColor(R.color.black)
                 .focusBorderColor(Color.BLACK)
                 .focusBorderSize(5)
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
         final FancyShowCaseView fancyShowCaseView6 = new FancyShowCaseView.Builder(this)
                 .title("Exclamacion")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .titleStyle(R.style.showcaseText, Gravity.CENTER | Gravity.TOP)
                 .backgroundColor(R.color.black)
                 .focusBorderColor(Color.BLACK)
                 .focusBorderSize(5)
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
         final FancyShowCaseView fancyShowCaseView2 = new FancyShowCaseView.Builder(this)
                 .title("Spacecart")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .titleStyle(R.style.showcaseText, Gravity.BOTTOM | Gravity.LEFT | Gravity.CENTER )
                 .backgroundColor(R.color.black)
                 .focusBorderColor(Color.BLACK)
                 .focusBorderSize(5)
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
         final FancyShowCaseView fancyShowCaseView7 = new FancyShowCaseView.Builder(this)
                 .title("Earth")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .titleStyle(R.style.showcaseText,Gravity.CENTER | Gravity.BOTTOM )
                 .backgroundColor(R.color.black)
                 .focusBorderColor(Color.BLACK)
                 .focusBorderSize(5)
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
 
         final FancyShowCaseView fancyShowCaseExit = new FancyShowCaseView.Builder(this)
                 .title("Profile")
-                .titleStyle(R.style.showcaseText, Gravity.CENTER )
+                .titleStyle(R.style.showcaseText, Gravity.CENTER | Gravity.TOP)
                 .backgroundColor(R.color.black)
                 .focusBorderColor(Color.BLACK)
                 .focusBorderSize(5)

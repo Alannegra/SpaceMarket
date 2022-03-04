@@ -59,6 +59,8 @@ public class tutorial extends Fragment {
         AXAnimation.create()
                 .duration(4000)
                 .background(gd1, gd2, cd)
+                .scale(5f,0.5f,1f)
+                .rotation(360f)
                 .start(view.findViewById(R.id.button_custom));
 
 

@@ -15,6 +15,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.aghajari.axanimation.AXAnimation;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Options2Fragment#newInstance} factory method to
@@ -38,6 +40,7 @@ public class Options2Fragment extends Fragment {
     NavController navController;
     TextView textView,textView2,textView3,si,no,estas;
     ImageView spinner,spinner2,rectangulo;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -81,12 +84,21 @@ public class Options2Fragment extends Fragment {
                 spinner2.setVisibility(View.VISIBLE);
                 rectangulo.setVisibility(View.VISIBLE);
 
+
             }
         });
+
+
+
+
+
+
 
         si.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 System.exit(0);
             }
 
@@ -102,12 +114,16 @@ public class Options2Fragment extends Fragment {
         no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 estas.setVisibility(View.INVISIBLE);
                 si.setVisibility(View.INVISIBLE);
                 no.setVisibility(View.INVISIBLE);
                 spinner.setVisibility(View.INVISIBLE);
                 spinner2.setVisibility(View.INVISIBLE);
                 rectangulo.setVisibility(View.INVISIBLE);
+
+
             }
 
         });

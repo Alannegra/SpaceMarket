@@ -48,7 +48,14 @@
         android:id="@+id/options1Fragment"
         android:name="com.example.navegation.Options1Fragment"
         android:label="fragment_options1"
-        tools:layout="@layout/fragment_options1" />
+        tools:layout="@layout/fragment_options1" >
+        <action
+            android:id="@+id/action_options1Fragment_to_enviar"
+            app:destination="@id/enviar" />
+        <action
+            android:id="@+id/action_options1Fragment_to_carreteDeFotos"
+            app:destination="@id/carreteDeFotos" />
+    </fragment>
     <fragment
         android:id="@+id/options2Fragment"
         android:name="com.example.navegation.Options2Fragment"
@@ -165,6 +172,32 @@
         android:name="com.example.navegation.Profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/enviar"
+        android:name="com.example.navegation.Enviar"
+        android:label="fragment_enviar"
+        tools:layout="@layout/fragment_enviar" />
+    <fragment
+        android:id="@+id/carreteDeFotos"
+        android:name="com.example.navegation.CarreteDeFotos"
+        android:label="fragment_carrete_de_fotos"
+        tools:layout="@layout/fragment_carrete_de_fotos" >
+        <action
+            android:id="@+id/action_carreteDeFotos_to_exclamacionConFoto"
+            app:destination="@id/exclamacionConFoto" />
+    </fragment>
+    <fragment
+        android:id="@+id/exclamacionConFoto"
+        android:name="com.example.navegation.ExclamacionConFoto"
+        android:label="fragment_exclamacion_con_foto"
+        tools:layout="@layout/fragment_exclamacion_con_foto" >
+        <action
+            android:id="@+id/action_exclamacionConFoto_to_enviar"
+            app:destination="@id/enviar" />
+        <action
+            android:id="@+id/action_exclamacionConFoto_to_carreteDeFotos"
+            app:destination="@id/carreteDeFotos" />
+    </fragment>
     <!--<fragment
         android:id="@+id/options3Fragment"
         android:name="com.example.navegation.Options3Fragment"
