@@ -55,7 +55,7 @@ public class SignOut extends Fragment {
                 .duration(1000)
                 .alpha(1f)
                 .nextSection()
-                .scale(1.5f, 1.25f, 1.8f)
+                .scale(1.5f, 1.25f, 1.8f, 1f)
                 .start(view.findViewById(R.id.transition_button));
 
         navController = Navigation.findNavController(view);

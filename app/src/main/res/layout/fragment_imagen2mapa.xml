@@ -20,7 +20,7 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
 
-        <ImageView
+        <pl.droidsonroids.gif.GifImageView
             android:id="@+id/pressed"
             android:layout_width="225dp"
             android:layout_height="190dp"

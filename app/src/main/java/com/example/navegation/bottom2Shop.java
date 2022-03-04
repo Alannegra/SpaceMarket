@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.aghajari.axanimation.AXAnimation;
+
 import pl.droidsonroids.gif.GifImageView;
 
 /**
@@ -37,9 +39,9 @@ public class bottom2Shop extends Fragment {
     }
 
 
-    ImageView imageView;
+    ImageView imageView,imageView2;
     NavController navController;
-    TextView textView;
+    TextView textView,textView2;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -63,6 +65,40 @@ public class bottom2Shop extends Fragment {
                 navController.navigate(R.id.action_bottom2Shop_to_creditcard);
             }
         });
+
+        imageView2 = view.findViewById(R.id.imageView31);
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                AXAnimation.create()
+                        .duration(750)
+                        .alpha(1f)
+                        .nextSection()
+                        .scale(1.5f, 1f)
+                        .rotation(60f,-60f,60f,-60f,0f)
+                        .start(view.findViewById(R.id.imageView31));
+
+
+            }
+        });
+
+        textView2 = view.findViewById(R.id.ASD);
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                AXAnimation.create()
+                        .duration(750)
+                        .alpha(1f)
+                        .nextSection()
+                        .scale(1.5f, 1f)
+                        .rotation(60f,-60f,60f,-60f,0f)
+                        .start(view.findViewById(R.id.ASD));
+
+            }
+        });
+
     }
 
     /**

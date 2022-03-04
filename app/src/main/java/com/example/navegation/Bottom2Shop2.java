@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.aghajari.axanimation.AXAnimation;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Bottom2Shop2#newInstance} factory method to
@@ -34,9 +36,9 @@ public class Bottom2Shop2 extends Fragment {
         // Required empty public constructor
     }
 
-    ImageView imageView;
+    ImageView imageView,imageView2;
     NavController navController;
-    TextView textView;
+    TextView textView,textView2;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -60,6 +62,11 @@ public class Bottom2Shop2 extends Fragment {
                 navController.navigate(R.id.action_bottom2Shop2_to_bottom2ShopFinal);
             }
         });
+
+
+
+
+
     }
 
     /**

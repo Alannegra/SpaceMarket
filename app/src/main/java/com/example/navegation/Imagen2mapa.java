@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import pl.droidsonroids.gif.GifImageView;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Imagen2mapa#newInstance} factory method to
@@ -38,14 +40,15 @@ public class Imagen2mapa extends Fragment {
 
     NavController navController;
     ImageView imageView;
+    GifImageView gifImageView;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         /*navController = Navigation.findNavController(view);*/
 
-        imageView = view.findViewById(R.id.pressed);
-        imageView.setOnLongClickListener(new View.OnLongClickListener() {
+        gifImageView = view.findViewById(R.id.pressed);
+        gifImageView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 NavHostFragment.findNavController(Imagen2mapa.this).navigate(R.id.action_bottom1Fragment_to_earthItem);

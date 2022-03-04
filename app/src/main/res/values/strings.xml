@@ -35,5 +35,6 @@
     <string name="recla">¡Tu reclamacion a sido enviada con exito!</string>
     <string name="user">User</string>
     <string name="pass">Pass</string>
+    <string name="sun">Sun</string>
 
 </resources>

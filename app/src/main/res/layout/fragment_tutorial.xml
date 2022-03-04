@@ -28,39 +28,35 @@
         android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
         android:alpha="0"
-        android:onClick="lanzaShowCaseView"
         android:text="ShowCaseView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <TextView
         android:id="@+id/button_actionCall2"
         android:layout_width="96dp"
         android:layout_height="50dp"
         android:alpha="0"
-        android:onClick="lanzaShowCaseView"
         android:text="ShowCaseView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <TextView
         android:id="@+id/button_actionCall3"
         android:layout_width="88dp"
         android:layout_height="54dp"
         android:layout_marginEnd="32dp"
         android:alpha="0"
-        android:onClick="lanzaShowCaseView"
         android:text="ShowCaseView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <TextView
         android:id="@+id/button_actionCall"
         android:layout_width="59dp"
         android:layout_height="51dp"
         android:alpha="0"
-        android:onClick="lanzaShowCaseView"
         android:text="ShowCaseView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -91,12 +87,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/backgroundmap" />
 
-    <Button
+    <TextView
         android:id="@+id/button_showcase"
         android:layout_width="60dp"
         android:layout_height="53dp"
         android:alpha="0"
-        android:onClick="lanzaShowCaseView"
         android:text="ShowCaseView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
