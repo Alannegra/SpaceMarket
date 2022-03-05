@@ -38,12 +38,42 @@ public class Creditcard extends Fragment {
     NavController navController;
     TextView textView;
 
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-
+        map = view.findViewById(R.id.mapbutton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_creditcard_to_bottom1Fragment);
+            }
+        });
+        earth = view.findViewById(R.id.earthbutton);
+        earth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_creditcard_to_bottom3Fragment);
+            }
+        });
+        exclamacion = view.findViewById(R.id.exclamacion);
+        exclamacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_creditcard_to_options1Fragment);
+            }
+        });
+        profile = view.findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_creditcard_to_options2Fragment);
+            }
+        });
 
         imageView = view.findViewById(R.id.acceptbutton);
         imageView.setOnClickListener(new View.OnClickListener() {

@@ -81,5 +81,15 @@
         app:layout_constraintStart_toStartOf="@+id/acceptbutton"
         app:layout_constraintTop_toTopOf="@+id/acceptbutton" />
 
+    <include android:id="@+id/fragment_menutopnav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/fragment_menutopnav"/>
+
+    <include android:id="@+id/fragment_menubotnav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/fragment_menubotnav"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

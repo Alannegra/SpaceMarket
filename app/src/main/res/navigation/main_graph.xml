@@ -71,6 +71,18 @@
         <action
             android:id="@+id/action_options1Fragment_to_carreteDeFotos"
             app:destination="@id/carreteDeFotos" />
+        <action
+            android:id="@+id/action_options1Fragment_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_options1Fragment_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_options1Fragment_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_options1Fragment_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/options2Fragment"
@@ -83,6 +95,18 @@
         <action
             android:id="@+id/action_options2Fragment_to_fragment_login"
             app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_options2Fragment_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_options2Fragment_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_options2Fragment_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_options2Fragment_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
     </fragment>
     <fragment
         android:id="@+id/fragment_menutopnav"
@@ -136,6 +160,18 @@
         <action
             android:id="@+id/action_earthItem_to_bottom2Shop"
             app:destination="@id/bottom2Shop" />
+        <action
+            android:id="@+id/action_earthItem_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_earthItem_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_earthItem_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
+        <action
+            android:id="@+id/action_earthItem_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/bottom2Shop"
@@ -166,6 +202,18 @@
         <action
             android:id="@+id/action_tutorial_to_bottom1Fragment"
             app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_tutorial_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_tutorial_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_tutorial_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
+        <action
+            android:id="@+id/action_tutorial_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/fakeLogin"
@@ -180,6 +228,18 @@
         <action
             android:id="@+id/action_creditcard_to_bottom2Shop2"
             app:destination="@id/bottom2Shop2" />
+        <action
+            android:id="@+id/action_creditcard_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_creditcard_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_creditcard_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
+        <action
+            android:id="@+id/action_creditcard_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/bottom2Shop2"
@@ -189,6 +249,18 @@
         <action
             android:id="@+id/action_bottom2Shop2_to_bottom2ShopFinal"
             app:destination="@id/bottom2ShopFinal" />
+        <action
+            android:id="@+id/action_bottom2Shop2_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_bottom2Shop2_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_bottom2Shop2_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
+        <action
+            android:id="@+id/action_bottom2Shop2_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/bottom2ShopFinal"
@@ -203,12 +275,37 @@
         <action
             android:id="@+id/action_profile2_to_fragment_login"
             app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_profile2_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_profile2_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_profile2_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_profile2_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
     </fragment>
     <fragment
         android:id="@+id/enviar"
         android:name="com.example.navegation.Enviar"
         android:label="fragment_enviar"
-        tools:layout="@layout/fragment_enviar" />
+        tools:layout="@layout/fragment_enviar" >
+        <action
+            android:id="@+id/action_enviar_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_enviar_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_enviar_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_enviar_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/carreteDeFotos"
         android:name="com.example.navegation.CarreteDeFotos"
@@ -229,6 +326,18 @@
         <action
             android:id="@+id/action_exclamacionConFoto_to_carreteDeFotos"
             app:destination="@id/carreteDeFotos" />
+        <action
+            android:id="@+id/action_exclamacionConFoto_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_exclamacionConFoto_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_exclamacionConFoto_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_exclamacionConFoto_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
     </fragment>
     <fragment
         android:id="@+id/imagen1mapa"

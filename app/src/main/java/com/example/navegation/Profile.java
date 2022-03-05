@@ -59,9 +59,42 @@ public class Profile extends Fragment {
     ImageView imageView;
     TextView textView;
 
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        navController = Navigation.findNavController(view);
+        map = view.findViewById(R.id.mapbutton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_profile2_to_bottom1Fragment);
+            }
+        });
+        carmarket = view.findViewById(R.id.carmarketbutton);
+        carmarket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_profile2_to_bottom2Fragment);
+            }
+        });
+        earth = view.findViewById(R.id.earthbutton);
+        earth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_profile2_to_bottom3Fragment);
+            }
+        });
+        exclamacion = view.findViewById(R.id.exclamacion);
+        exclamacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_profile2_to_options1Fragment);
+            }
+        });
 
         AXAnimation.create()
                 .duration(1000)

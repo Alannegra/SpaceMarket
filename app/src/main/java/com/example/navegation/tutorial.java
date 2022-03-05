@@ -29,20 +29,51 @@ public class tutorial extends Fragment {
     ImageView imageView;
     NavController navController;
 
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-        imageView = view.findViewById(R.id.mapbutton);
-
-
-        imageView.setOnClickListener(new View.OnClickListener() {
+        map = view.findViewById(R.id.mapbutton);
+        map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_tutorial_to_bottom1Fragment);
             }
         });
+        carmarket = view.findViewById(R.id.carmarketbutton);
+        carmarket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_tutorial_to_bottom2Fragment);
+            }
+        });
+        earth = view.findViewById(R.id.earthbutton);
+        earth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_tutorial_to_bottom3Fragment);
+            }
+        });
+        exclamacion = view.findViewById(R.id.exclamacion);
+        exclamacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_tutorial_to_options1Fragment);
+            }
+        });
+        profile = view.findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_tutorial_to_options2Fragment);
+            }
+        });
+
+
 
         GradientDrawable gd1 = new GradientDrawable();
         gd1.setColors(new int[]{Color.CYAN, Color.BLUE});

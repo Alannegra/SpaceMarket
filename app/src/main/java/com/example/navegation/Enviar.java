@@ -5,9 +5,13 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.aghajari.axanimation.AXAnimation;
 
@@ -50,10 +54,43 @@ public class Enviar extends Fragment {
         // Required empty public constructor
     }
 
+    NavController navController;
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        navController = Navigation.findNavController(view);
+        map = view.findViewById(R.id.mapbutton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_enviar_to_bottom1Fragment);
+            }
+        });
+        carmarket = view.findViewById(R.id.carmarketbutton);
+        carmarket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_enviar_to_bottom2Fragment);
+            }
+        });
+        earth = view.findViewById(R.id.earthbutton);
+        earth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_enviar_to_bottom3Fragment);
+            }
+        });
+        profile = view.findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_enviar_to_options2Fragment);
+            }
+        });
         AXAnimation.create()
                 .duration(4000)
                 .scale(1f,0.5f,0f)

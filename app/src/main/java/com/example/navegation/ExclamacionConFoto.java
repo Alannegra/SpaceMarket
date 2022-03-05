@@ -38,11 +38,43 @@ public class ExclamacionConFoto extends Fragment {
     TextView textView;
     ImageView imageView;
 
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
+        map = view.findViewById(R.id.mapbutton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_exclamacionConFoto_to_bottom1Fragment);
+            }
+        });
+        carmarket = view.findViewById(R.id.carmarketbutton);
+        carmarket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_exclamacionConFoto_to_bottom2Fragment);
+            }
+        });
+        earth = view.findViewById(R.id.earthbutton);
+        earth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_exclamacionConFoto_to_bottom3Fragment);
+            }
+        });
+        profile = view.findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_exclamacionConFoto_to_options2Fragment);
+            }
+        });
+
         textView = view.findViewById(R.id.textView10);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
