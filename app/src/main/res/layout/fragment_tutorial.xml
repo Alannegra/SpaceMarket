@@ -8,17 +8,17 @@
     android:background="#FFFFFF">
 
 
-
     <ImageView
         android:id="@+id/backgroundmap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="5"
-        android:scaleY="5"
-        android:src="@drawable/mapbackground"
+        android:rotation="-90"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:src="@drawable/spaceblue"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="0dp" />
 
 
     <TextView

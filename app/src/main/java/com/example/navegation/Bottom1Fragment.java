@@ -24,8 +24,7 @@ import com.example.navegation.databinding.FragmentBottom1Binding;
  * create an instance of this fragment.
  */
 public class Bottom1Fragment extends Fragment {
-    ImageView profile,exclamacion;
-    ImageView map,carmarket,earth;
+
     ImageView backgroundmap;
     NavController navController;
     private FragmentBottom1Binding binding;
@@ -37,6 +36,9 @@ public class Bottom1Fragment extends Fragment {
         // Inflate the layout for this fragment
         return (binding = FragmentBottom1Binding.inflate(inflater, container, false)).getRoot();
     }
+
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
