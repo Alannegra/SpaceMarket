@@ -57,6 +57,15 @@
         <action
             android:id="@+id/action_bottom3Fragment_to_earthItem"
             app:destination="@id/earthItem" />
+        <action
+            android:id="@+id/action_bottom3Fragment_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_bottom3Fragment_to_bottom2Fragment"
+            app:destination="@id/bottom2Fragment" />
+        <action
+            android:id="@+id/action_bottom3Fragment_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
     </fragment>
 
 
@@ -266,7 +275,20 @@
         android:id="@+id/bottom2ShopFinal"
         android:name="com.example.navegation.Bottom2ShopFinal"
         android:label="fragment_bottom2_shop_final"
-        tools:layout="@layout/fragment_bottom2_shop_final" />
+        tools:layout="@layout/fragment_bottom2_shop_final" >
+        <action
+            android:id="@+id/action_bottom2ShopFinal_to_bottom1Fragment"
+            app:destination="@id/bottom1Fragment" />
+        <action
+            android:id="@+id/action_bottom2ShopFinal_to_bottom3Fragment"
+            app:destination="@id/bottom3Fragment" />
+        <action
+            android:id="@+id/action_bottom2ShopFinal_to_options1Fragment"
+            app:destination="@id/options1Fragment" />
+        <action
+            android:id="@+id/action_bottom2ShopFinal_to_options2Fragment"
+            app:destination="@id/options2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/profile2"
         android:name="com.example.navegation.Profile"

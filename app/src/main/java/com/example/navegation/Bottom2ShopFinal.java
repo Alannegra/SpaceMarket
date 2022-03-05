@@ -53,28 +53,28 @@ public class Bottom2ShopFinal extends Fragment {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_bottom2Shop_to_bottom1Fragment);
+                navController.navigate(R.id.action_bottom2ShopFinal_to_bottom1Fragment);
             }
         });
         earth = view.findViewById(R.id.earthbutton);
         earth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_bottom2Shop_to_bottom3Fragment);
+                navController.navigate(R.id.action_bottom2ShopFinal_to_bottom3Fragment);
             }
         });
         exclamacion = view.findViewById(R.id.exclamacion);
         exclamacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_bottom2Shop_to_options1Fragment);
+                navController.navigate(R.id.action_bottom2ShopFinal_to_options1Fragment);
             }
         });
         profile = view.findViewById(R.id.profile);
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_bottom2Shop_to_options2Fragment);
+                navController.navigate(R.id.action_bottom2ShopFinal_to_options2Fragment);
             }
         });
         imageView = view.findViewById(R.id.pdf);

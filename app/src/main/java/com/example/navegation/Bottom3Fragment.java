@@ -26,11 +26,36 @@ public class Bottom3Fragment extends Fragment {
     NavController navController;
     GifImageView gifImageView;
 
+    ImageView profile,exclamacion;
+    ImageView map,carmarket,earth;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
+        map = view.findViewById(R.id.mapbutton);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_bottom3Fragment_to_bottom1Fragment);
+            }
+        });
+        carmarket = view.findViewById(R.id.carmarketbutton);
+        carmarket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_bottom3Fragment_to_bottom2Fragment);
+            }
+        });
+
+        profile = view.findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_bottom3Fragment_to_options2Fragment);
+            }
+        });
         imageView = view.findViewById(R.id.exclamacion);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
