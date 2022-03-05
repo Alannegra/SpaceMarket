@@ -63,28 +63,28 @@ public class Bottom2Fragment extends Fragment {
         exclamacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_fragment_menutopnav_to_options1Fragment);
+                navController.navigate(R.id.action_bottom2Fragment_to_options1Fragment);
             }
         });
         profile = view.findViewById(R.id.profile);
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_fragment_menutopnav_to_options2Fragment);
+                navController.navigate(R.id.action_bottom2Fragment_to_options2Fragment);
             }
         });
-        carmarket = view.findViewById(R.id.carmarketbutton);
-        carmarket.setOnClickListener(new View.OnClickListener() {
+        map = view.findViewById(R.id.mapbutton);
+        map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_fragment_menubotnav_to_bottom2Fragment);
+                navController.navigate(R.id.action_bottom2Fragment_to_bottom1Fragment);
             }
         });
         earth = view.findViewById(R.id.earthbutton);
         earth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_fragment_menubotnav_to_bottom3Fragment);
+                navController.navigate(R.id.action_bottom2Fragment_to_bottom3Fragment);
             }
         });
     }
